@@ -1,0 +1,31 @@
+//To find HCF  in to variable 
+#include<stdio.h>
+int main()
+{
+	int n1,n2,i,hcf;
+	int temp1,temp2;
+	printf("Enter two number n1 and n2\n:");
+	scanf("%d%d",&n1,&n2);
+	temp1=n1,temp2=n2;
+	for(i=1;i<=n1;i++)
+	{
+		for(i=1;i<=n2;i++)
+		{
+		if(n1%i==0&&n2%i==0)
+	     hcf=i;
+	     
+	    }
+	}
+	printf("HCF of  %d and %d= %d",temp1,temp2,hcf);
+  return 0;
+}
+/*............OUTPUT SCREEN................
+Enter two number n1 and n2
+:4
+8
+HCF of  4 and 8= 4
+--------------------------------
+Process exited after 7.214 seconds with return value 0
+Press any key to continue . . .
+
+*/
