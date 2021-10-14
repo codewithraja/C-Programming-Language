@@ -1,0 +1,24 @@
+//WAP to check the user enter that types of value like alpbabet , digit and special type value
+#include<stdio.h>
+int main()
+{
+	char ch;
+	printf("ENTER ANY KEY ON YOUR KEYBOARD\n");
+	scanf("%c",&ch);
+	if(ch>=65&&ch<=91||ch>=97&&ch<=123)
+	printf("\nYOUR ARE ENTIRE A ALPHABET");
+	else if(ch>='0'&&ch<='9')
+	printf("\nYOUR ARE ENTIRE A DIGIT");
+	else
+	printf("\nYOUR ARE ENTIRE A SPECIAL TYPE VALUE");
+    return 0;
+}
+/*....................OUTPUT SCREEN........................
+ENTER ANY KEY ON YOUR KEYBOARD
+3
+
+YOUR ARE ENTIRE A DIGIT
+--------------------------------
+Process exited after 7.051 seconds with return value 0
+Press any key to continue . . .
+*/
