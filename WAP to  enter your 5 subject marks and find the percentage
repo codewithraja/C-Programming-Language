@@ -1,0 +1,38 @@
+//WAP to  enter your 5 subject marks and find the percentage
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int math,sci,soc,hin,eng;
+	int total;
+	int per;
+	printf("Enter your subject marks respectively\n");
+	scanf("%d%d%d%d%d",&math,&sci,&soc,&hin,&eng);
+	if(math<=100&&sci<=100&&soc<=100&&hin<=100&&eng<=100)
+	{
+	total=(math+sci+soc+hin+eng);
+	if(math!=0&&sci!=0&&soc!=0&&hin!=0&&eng!=0)
+	{
+	per=((total*100)/500);
+	printf("The percentage =%d",per);
+    }
+    else
+    printf("you are fail");
+    }
+    else 
+    printf("Please enter valid marks of subject");
+    return 0;
+	
+}
+/*..................OUTPUT SCREEN..................
+Enter your subject marks respectively
+78
+68
+90
+89
+90
+The percentage =83
+--------------------------------
+Process exited after 17.08 seconds with return value 0
+Press any key to continue . . .
+*/
