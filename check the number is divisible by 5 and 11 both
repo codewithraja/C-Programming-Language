@@ -1,0 +1,19 @@
+//check the number is divisible by 5 and 11 both
+#include<stdio.h>
+int main()
+{
+int num;
+printf("enter the num:\n");
+scanf("%d",&num);
+if(num%5==0&&num%11==0)
+printf("the divisible is 5 and 11");
+else
+printf("the divisible is not 5 and 11");
+}
+/*....................OUTPUT SCREEN...................
+enter the num:
+78
+the divisible is not 5 and 11
+--------------------------------
+Process exited after 16.26 seconds with return value 0
+Press any key to continue . . .*/
