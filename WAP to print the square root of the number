@@ -1,0 +1,21 @@
+//WAP to print the square root of the number
+#include<stdio.h>
+#include<math.h>
+float main()
+{
+	float n,sqr;
+	printf("Enter the an number");
+	scanf("%f",&n);
+	sqr=sqrt(n);
+	printf("The square root of %.2f=%.2f",n,sqr);
+	return 0;
+}
+/*.................OUTPUT SCREEN...........
+Enter the an number
+25
+The square root of 25.00=5.00
+--------------------------------
+Process exited after 11.18 seconds with return value 29
+Press any key to continue . . .
+
+*/
