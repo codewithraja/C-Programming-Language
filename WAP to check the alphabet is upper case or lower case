@@ -1,0 +1,22 @@
+//check the alphabet upper case or lower case
+#include<stdio.h>
+int  main()
+{
+	char ch;
+	printf("Enter an character typr value\n");
+	scanf("%c",&ch);
+	if(ch>='A'&&ch<='Z')
+	printf("Is upper case");
+	else if(ch>='a'&&ch<='z')
+	printf("Is lower case");
+	else
+	printf("NO RESULTS FOUND\n THANKS");
+}
+/*...............OUTPUT SCREEN...................
+Enter an character typr value
+S
+Is upper case
+--------------------------------
+Process exited after 6.235 seconds with return value 0
+Press any key to continue . . .
+*/
