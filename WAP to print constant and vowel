@@ -1,0 +1,30 @@
+//wap to print constant and vowel type value only
+#include<stdio.h>
+int main()
+{
+	char ch;
+	printf("Enter  a character type value\n");
+	scanf("%c",&ch);
+	if(ch>=65&&ch<=91||ch>=97&&ch<=123)
+	{
+		if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+		printf("\nvowel is %c",ch);
+		else
+		printf("The entire value is consonant");
+	}
+	else
+		printf("your value not a character type");
+		printf("\nTHANKS FOR USING MY SOFTWARE");
+    return 0;
+}                 
+/*............OUTPUT SCREEN...........................................................
+
+	     Enter  a character type value
+a
+
+vowel is a
+THANKS FOR USING MY SOFTWARE
+--------------------------------
+Process exited after 15.07 seconds with return value 0
+Press any key to continue . . .*/
+	
