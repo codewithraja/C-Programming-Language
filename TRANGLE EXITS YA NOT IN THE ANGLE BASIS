@@ -1,0 +1,32 @@
+//TRANGLE EXITS YA NOT IN THE ANGLE BASIS
+#include<Stdio.h>
+int main()
+{
+	int a,b,c,sum;
+	printf("Enter the angle of a trangle \n");
+	scanf("%d%d%d",&a,&b,&c);
+	sum=a+b+c;
+	if(sum==180)
+	{
+		if(a!=0&&b!=0&&c!=0)
+			printf("The trangle is  exit");
+		else
+		      printf("The trangle is  not exit");
+	}
+	else
+	printf("The trangle is not exit");
+	return 0;
+	
+}
+/*....................OUTPUT SCREEN...................
+Enter the angle of a trangle
+56
+57
+89
+The trangle is not exit
+--------------------------------
+Process exited after 4.794 seconds with return value 0
+Press any key to continue . . .
+
+
+*/
