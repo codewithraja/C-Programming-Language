@@ -1,0 +1,49 @@
+//FIND ALL ROOT OF A QUADRATIC EQUATIONS
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,b,c;
+	float d,x1,x2;
+	printf("Enter the co-efficient of  quadratic equations a,b and c\n");
+	scanf("%f%f%f",&a,&b,&c);
+	printf("The quadratic equations=%.0fx^2+%.0fx+%.0f=0\n\n",a,b,c);
+	d=((b*b)-(4*a*c));
+	if(d>0)
+	{
+	x1=(-b+sqrt(d))/(2*a);
+	printf("x=%.2f",x1);
+	x2=(-b-sqrt(d))/(2*a);
+	printf("x=%.2f",x2);
+    }
+    else
+    {
+	if(d==0)
+	{
+	x1=(-b)/(2*a);
+	printf("x=%.2f",x1);
+	}
+	 else if(d<0)
+	 {
+	x1=(-b)/(2*a);
+	x2=sqrt(-d)/(2*a);
+	printf("x1=%.2f+i%.2f\n",x1,x2);
+	printf("x2=%.2f-i%.2f",x1,x2);
+     }
+     
+    }
+    return 0;
+}
+/*.................OUTPUT SCREEN................
+Enter the co-efficient of  quadratic equations a,b and c
+5
+4
+6
+The quadratic equations=5x^2+4x+6=0
+
+x1=-0.40+i1.02
+x2=-0.40-i1.02
+--------------------------------
+Process exited after 8.552 seconds with return value 0
+Press any key to continue . . .
+*/
