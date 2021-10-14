@@ -1,0 +1,25 @@
+//check the trangle is equilateral , isosceles and scalene
+#include<stdio.h>
+int main()
+{
+	 int a1,a2,a3;
+	 printf("Enter an trangle all angles\n");
+	 scanf("%u%u%u",&a1,&a2,&a3);
+	 if(a1==a2&&a2==a3&&a3==a1)
+	 printf("equilateral trangle");
+	 else if(a1==a2||a2==a3||a3==a1)
+	 printf("isosceles trangle");
+	 else
+	 printf("scalene");
+   return 0;
+}
+/*..................OUTPUT SCREEN................
+Enter an trangle all angles
+12
+45
+78
+scalene
+--------------------------------
+Process exited after 6.079 seconds with return value 0
+Press any key to continue . . .
+*/
