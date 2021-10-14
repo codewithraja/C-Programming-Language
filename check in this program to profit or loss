@@ -1,0 +1,28 @@
+//check in this program to profit or loss 
+#include<stdio.h>
+int main()
+{
+	int cost, sellprize,profit,loss;
+	printf("Enter your cost prize of your product\n");
+	scanf("%d",&cost);
+	printf("Enter your selling prize \n");
+	scanf("%d",&sellprize);
+	profit=sellprize-cost;
+	loss=cost-sellprize;
+	if(cost>sellprize)
+	printf("loss=%d",loss);
+	else
+	printf("profit=%d\n\ncongrats you",profit);
+}
+/*..............OUTPUT SCREEN..................
+Enter your cost prize of your product
+45
+Enter your selling prize
+67
+profit=22
+
+congrats you
+--------------------------------
+Process exited after 13.72 seconds with return value 0
+Press any key to continue . . .
+*/
