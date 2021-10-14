@@ -1,0 +1,30 @@
+//CHECK to the basic of angle the trangle is exit or not
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	int sum;
+	printf("ENTER AN TRANGLE ANGLE \n");
+	scanf("%d%d%d",&a,&b,&c);
+	sum=a+b+c;
+	if(sum==180)
+	{
+		if(a!=0&&b!=0&&c!=0)
+		printf("The trangle is exits");
+		else
+		printf("The trangle is not exits");
+	}
+	else
+	printf("The trangle is not possible");
+  return 0;
+}
+/*...............OUTPUT SCREEN..............
+ENTER AN TRANGLE ANGLE
+60
+60
+60
+The trangle is exits
+--------------------------------
+Process exited after 19.62 seconds with return value 0
+Press any key to continue . . .
+*/
