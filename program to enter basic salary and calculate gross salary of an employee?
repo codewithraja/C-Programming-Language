@@ -1,0 +1,44 @@
+#include<stdio.h>
+int main()
+{
+	int salary;
+	int HRA,DA,gross;
+	printf("HERE BASIC SALARY IS 10,000 ARE DECLARED\n");
+	scanf("%d",&salary);
+	//if(salary>=10000)
+	//{
+		printf("your salary is : %d\n\n",salary);
+		if(salary==10000)
+		{
+		}
+		else if(salary>=10001&&salary<=20000)
+		{
+			HRA=(salary*20)/100;
+			DA=(salary*80)/100;
+			gross=(HRA+DA+salary);
+			printf("YOUR GROSS SALARY=%d",gross);
+		 HRA=(salary*25)/100;
+			DA=(salary*90)/100;
+			gross=(HRA+DA+salary);
+			printf("YOUR GROSS SALARY=%d",gross);	
+		}
+		else if(salary>=20001)
+		{
+			HRA=(salary*30)/100;
+			DA=(salary*95)/100;
+			gross=(HRA+DA+salary);
+			printf("YOUR GROSS SALARY=%d",gross);
+		}
+//	}
+//	else
+//	printf("ENTER YOUR VALID SALARY");
+}
+/*......................output screen...........................
+HERE BASIC SALARY IS 10,000 ARE DECLARED
+50000
+your salary is : 50000
+
+YOUR GROSS SALARY=112500
+--------------------------------
+Process exited after 23.43 seconds with return value 0
+Press any key to continue . . .*/
