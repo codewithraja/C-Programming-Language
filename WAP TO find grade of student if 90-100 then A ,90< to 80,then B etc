@@ -1,0 +1,29 @@
+//WAP TO find grade of student if 90-100 then A ,90< to 80,then B etc
+#include<stdio.h>
+int main()
+{
+int num;
+printf("Enter your marks in percentage :\n ");
+scanf("%d",&num);
+if(num>=90&&num<=100)
+printf("grade A");
+else if(num>=80&&num<=89)
+printf("grade B");
+else if(num>=70&&num<=79)
+printf("grade C");
+else if(num>=60&&num<=69)
+printf("grade D");
+else if(num>=40&&num<=59)
+printf("grade E");
+else if(num<=39)
+printf("grade F");	
+return 0;
+}
+/*...............OUTPUT SCREEN.............
+Enter your marks in percentage :
+ 90
+grade A
+--------------------------------
+Process exited after 5.517 seconds with return value 0
+Press any key to continue . . .
+*/
