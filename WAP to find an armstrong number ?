@@ -1,0 +1,26 @@
+//WAP to find an armstrong number  difinatoin armstrong number is a number that is 
+//equal to sum of cube of its digits ex=123 then(1*1*1)+(2*2*2)+(3*3*3));
+#include<stdio.h>
+int main()
+{
+	int n,rem,sum=0,temp;
+	printf("Enter any rendam integer number\n");
+	scanf("%d",&n);
+	temp=n;
+	while(n>0)
+	{
+	rem=n%10;
+	sum=sum+(rem*rem*rem);
+	n=n/10;
+	}
+	if(sum==temp)
+	printf("It is an armstrong number=%d",temp);
+	else
+	printf("It is not an armstrong number=%d",temp);
+  return 0;
+}
+/*>>>>>>>>>>>>>>>>>>>>>output>>>>>>>>>>>>
+Enter any rendam integer number
+153
+It is an armstrong number=153
+*/
